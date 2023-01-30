@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        .b_form{
+            border:1px solid black;
+            padding:10px;
+            border-radius:4px;
+            width:500px;
+        }
+
+        .b_form label{
+            text-transform:uppercase; 
+        }
+
+        .b_form button{
+            width:100%; 
+            background:black;
+            color:white; 
+        }
+
+        .form-control:focus {
+            border-color: black;
+            //border-color: #FF0000;
+            //box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
+            // https://stackoverflow.com/questions/14820952/change-bootstrap-input-focus-blue-glow#:~:text=Full%20explanation%201%20Find%20the%20bootstrapCDN%20version%20that,RGBA%20parameter%20%280.25%29%20that%20bootstrap%20has%20for%20transparency.
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Bootstrap Original Form</h2>
+        <form action="/action_page.php">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+            </div>
+
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+    </div>
+
+    <br /><br /><br />
+
+    <div class="container">
+        <h2>Customized Form to suit requirements</h2>
+        <form action="/action_page.php" class="b_form">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+            </div>
+
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>
